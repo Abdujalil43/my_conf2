@@ -15,3 +15,21 @@ keymap('n', '<leader>x', ':Ex<CR>', { desc = 'Ex Command' })
 
 -- use jk to faster exit insert mode
 keymap('i', 'jk', '<ESC>', { desc = 'Exiting Insert Mode' })
+
+-- increment/decrement numbers
+keymap('n', '<leader>+', '<C-a>', { desc = 'Increasing Number' })
+keymap('n', '<leader>-', '<C-x>', { desc = 'Decreasing Number' })
+
+-- window management
+keymap('n', '<leader>sv', '<C-w>v', { desc = 'Split Vertically' })
+keymap('n', '<leader>sh', '<C-w>s', { desc = 'Split Horizontally' })
+keymap('n', '<leader>se', '<C-w>=', { desc = 'Equal width & height' })
+keymap('n', '<leader>sx', ':close<CR>', { desc = 'Close Window' })
+
+
+-- Resize with arrows
+keymap('n', '<C-Up>', ':resize -2<CR>', { desc = 'Resize to +2' })
+keymap('n', '<C-Down>', ':resize +2<CR>', { desc = 'Resize to -2' })
+keymap('n', '<C-Left>', ':vertical resize -2<CR>', { desc = 'Vertical Resize to -2' })
+keymap('n', '<C-Right>', ':vertical resize +2<CR>', { desc = 'Vertical Resize to -2' })
+

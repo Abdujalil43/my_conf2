@@ -1,9 +1,12 @@
 -- ==========================================================================
 -- Indents, spaces, tabulation
 -- ==========================================================================
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true			-- controls whether to expand tab characters into spaces
 vim.opt.cindent = true                          -- enable or disable C-style auto-indentation
 vim.opt.smarttab = true                         -- controls how the Tab key behaves 
+vim.opt.autoindent = true
 
 -- ==========================================================================
 -- UI
