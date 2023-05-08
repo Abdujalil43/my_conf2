@@ -37,3 +37,4 @@ keymap('n', '<C-Right>', ':vertical resize +2<CR>', { desc = 'Vertical Resize to
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+keymap('n', '<leader>nt', ':NvimTreeToggle<CR>', { desc = 'Nvim Tree Open and Close' })

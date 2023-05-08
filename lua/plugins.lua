@@ -25,7 +25,15 @@ end
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+
+  use 'nvim-lua/plenary.nvim' 
+
   use 'bluz71/vim-nightfly-guicolors'
+
+  use 'nvim-tree/nvim-tree.lua'
+
+  use 'nvim-tree/nvim-web-devicons'
+
   if packer_boostrap then
     require('packer').sync()
   end
